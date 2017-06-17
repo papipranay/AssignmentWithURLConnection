@@ -39,9 +39,7 @@
 		9B7784081EE46DB60097B2F8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7783F91EE46DB60097B2F8 /* UIWebView+AFNetworking.m */; };
 		9B77840B1EE4716A0097B2F8 /* RequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B77840A1EE4716A0097B2F8 /* RequestResponse.swift */; };
 		9B77840D1EE499E30097B2F8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B77840C1EE499E30097B2F8 /* Security.framework */; };
-		9B7784141EE4A2510097B2F8 /* jitensha.der in Resources */ = {isa = PBXBuildFile; fileRef = 9B7784131EE4A2510097B2F8 /* jitensha.der */; };
-		9BADD7B71EE5CF5300B52DC1 /* jitensha.pem in Resources */ = {isa = PBXBuildFile; fileRef = 9BADD7B61EE5CF5300B52DC1 /* jitensha.pem */; };
-		9BADD7B91EE5CFC700B52DC1 /* jitensha.crt in Resources */ = {isa = PBXBuildFile; fileRef = 9BADD7B81EE5CFC700B52DC1 /* jitensha.crt */; };
+		9BFA07191EF37202006208D8 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA07181EF37202006208D8 /* KeychainWrapper.m */; };
 		A7E4D7A44B853A2893B933B3 /* Pods_CrossOverAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03487F3BE0EA21AA7517E63 /* Pods_CrossOverAssignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,9 +120,8 @@
 		9B7784091EE46E010097B2F8 /* CrossOverAssignment-BridgeFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrossOverAssignment-BridgeFile.h"; sourceTree = "<group>"; };
 		9B77840A1EE4716A0097B2F8 /* RequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResponse.swift; sourceTree = "<group>"; };
 		9B77840C1EE499E30097B2F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9B7784131EE4A2510097B2F8 /* jitensha.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = jitensha.der; sourceTree = "<group>"; };
-		9BADD7B61EE5CF5300B52DC1 /* jitensha.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jitensha.pem; sourceTree = "<group>"; };
-		9BADD7B81EE5CFC700B52DC1 /* jitensha.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jitensha.crt; sourceTree = "<group>"; };
+		9BFA07171EF37202006208D8 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		9BFA07181EF37202006208D8 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		A42D21F8A98A302CFF5DA54F /* Pods-CrossOverAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverAssignmentTests/Pods-CrossOverAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5D29BDCF8E9698E75C46A08 /* Pods-CrossOverAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverAssignmentUITests/Pods-CrossOverAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD50E7F897776AE2639CE27C /* Pods-CrossOverAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverAssignmentTests/Pods-CrossOverAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,9 +185,6 @@
 		9B77839A1EE456B30097B2F8 /* CrossOverAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				9BADD7B61EE5CF5300B52DC1 /* jitensha.pem */,
-				9B7784131EE4A2510097B2F8 /* jitensha.der */,
-				9BADD7B81EE5CFC700B52DC1 /* jitensha.crt */,
 				9B77839B1EE456B30097B2F8 /* AppDelegate.swift */,
 				9B77839D1EE456B30097B2F8 /* ViewController.swift */,
 				9B7783CF1EE4659B0097B2F8 /* CustomMapView.swift */,
@@ -198,6 +192,8 @@
 				9B7783D11EE468890097B2F8 /* CustomMKPointAnnoation.swift */,
 				9B7783D31EE469210097B2F8 /* CustomLocationManager.swift */,
 				9B77840A1EE4716A0097B2F8 /* RequestResponse.swift */,
+				9BFA07171EF37202006208D8 /* KeychainWrapper.h */,
+				9BFA07181EF37202006208D8 /* KeychainWrapper.m */,
 				9B77839F1EE456B30097B2F8 /* Main.storyboard */,
 				9B7783A51EE456B30097B2F8 /* Assets.xcassets */,
 				9B7783A71EE456B30097B2F8 /* LaunchScreen.storyboard */,
@@ -417,11 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7783A91EE456B30097B2F8 /* LaunchScreen.storyboard in Resources */,
-				9BADD7B91EE5CFC700B52DC1 /* jitensha.crt in Resources */,
 				9B7783A61EE456B30097B2F8 /* Assets.xcassets in Resources */,
 				9B7783A11EE456B30097B2F8 /* Main.storyboard in Resources */,
-				9B7784141EE4A2510097B2F8 /* jitensha.der in Resources */,
-				9BADD7B71EE5CF5300B52DC1 /* jitensha.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +591,7 @@
 				9B7783D21EE468890097B2F8 /* CustomMKPointAnnoation.swift in Sources */,
 				9B7783FA1EE46DB60097B2F8 /* AFHTTPSessionManager.m in Sources */,
 				9B7784001EE46DB60097B2F8 /* AFAutoPurgingImageCache.m in Sources */,
+				9BFA07191EF37202006208D8 /* KeychainWrapper.m in Sources */,
 				9B7783FD1EE46DB60097B2F8 /* AFURLRequestSerialization.m in Sources */,
 				9B7783FF1EE46DB60097B2F8 /* AFURLSessionManager.m in Sources */,
 				9B7784011EE46DB60097B2F8 /* AFImageDownloader.m in Sources */,

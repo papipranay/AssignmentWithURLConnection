@@ -10,4 +10,5 @@
 #define CrossOverAssignment_BridgeFile_h
 
 #import "AFNetworking/AFNetworking.h"
+#import "KeychainWrapper.h"
 #endif /* CrossOverAssignment_BridgeFile_h */
